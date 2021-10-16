@@ -5,87 +5,277 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calendar</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
     <link rel="stylesheet" href="style.css">
 </head>
 
 
 
 <body>
-    <header>
-        <p>22 March 2018</p>
-        <img src="Pics/Oval.svg" alt="Oval">
-        <img src="Pics/Shape.svg" alt="Shape">
-        <img src="Pics/Rectangle-path.svg" alt="">
-        <img src="Pics/Rectangle-path2.svg" alt="">
-        <img src="Pics/Rectangle-path3.svg" alt="">
-        <img src="Pics/Rectangle-path4.svg" alt="">
-    </header>
+    <div class="Left_panel">
+        <header>
+            <p>22 March 2018</p>
+            <img class="Oval" src="Pics/Oval.svg" alt="Search" aria-label="Search">
+            <img src="Pics/Shape.svg" alt="Shape">
+            <img src="Pics/Rectangle-path.svg" alt="">
+            <img src="Pics/Rectangle-path2.svg" alt="">
+            <img src="Pics/Rectangle-path3.svg" alt="">
+            <img src="Pics/Rectangle-path4.svg" alt="">
+            <img src="Pics/----.png" alt="">
+        </header>
 
-    <div class="rows">
-        <span> 
-            9:00
-        </span>
+        <section class="lines">
+            <div class="rows">
+                <span> <img src="Pics/----.png">
+                9:00
+                </span>
 
-        <span> 
-            10:00
-        </span>
+                <span> <img src="Pics/----.png">
+                10:00
+                </span>
 
-        <span> 
-            11:00
-        </span>
+                <span> <img src="Pics/----.png">
+                11:00
+                </span>
 
-        <span> 
-            12:00
-        </span>
+                <span> <img src="Pics/----.png">
+                12:00
+                </span>
 
-        <span> 
-            13:00
-        </span>
+                <span> <img src="Pics/----.png">
+                13:00
+                </span>
 
-        <span> 
-            14:00
-        </span>
+                <span> <img src="Pics/----.png">
+                14:00
+                </span>
 
-        <span> 
-            15:00
-        </span>
+                <span> <img src="Pics/----.png">
+                15:00
+                </span>
 
-        <span> 
-            16:00
-        </span>
+                <span> <img src="Pics/----.png">
+                16:00
+                </span>
 
-        <span> 
-            17:00
-        </span>
+                <span> <img src="Pics/----.png">
+                17:00
+                </span>
 
-        <span> 
-            18:00
-        </span>
+                <span> <img src="Pics/----.png">
+                18:00
+                </span>
 
-        <span> 
-            19:00
-        </span>
+                <span> <img src="Pics/----.png">
+                19:00
+                </span>
 
-        <span> 
-            20:00
-        </span>
-    </div>    
+                <span> <img src="Pics/----.png">
+                20:00
+                </span>
+            </div> 
+   
 
-    <div class="red_block">
-        <p>Meet Sophia in airport</p>
+            <div class="red_block">
+                <div class="red_block_content">
+                    <p>Meet Sophia in airport</p>
+                </div>
+                <article id="red_block_stick"></article>
+            </div>
+
+            <div class="blue_block">
+                <div class="blue_block_content">
+                    <p>Studio workshop</p>
+                </div>
+                <article id="blue_block_stick"></article>
+            </div>
+
+            <div class="orange_block">
+                <div class="orange_block_content">
+                    <p>Design workshop with Johny Ive</p>
+                    <article id="orange_block_stick"></article>
+                </div>
+            </div>
+
+
+        
+        </section> 
+    
     </div>
 
-    <div class="blue_block">
-        <p>Studio workshop</p>
-    </div>
+    <aside class="Calendar_panel">
 
-    <div class="orange_block">
-        <p>Design workshop with Johny Ive</p>
-    </div>
+        <div class="Calendar_Item">
+
+            <div class="Calendar_header">
+                <button class="calendar_change-month--prev" aria-label="Previous month">
+                    <svg role="image" 
+                         aria-label="" 
+                         class="calendar__change-month-img" 
+                         viewBox="0 0 20 38">
+                        <path d="M19 1L1 19L19 37" />
+                    </svg>
+                </button>
+                <h2 class="calendar_title">March 2018</h2>
+                <button class="calendar_change-month--next" aria-label="Next month">
+                    <svg role="image" 
+                         aria-label="" 
+                         class="calendar__change-month-img" 
+                         viewBox="0 0 20 38">
+                        <path d="M19 1L1 19L19 37" />
+                    </svg>
+                </button>
+            </div>
+            <div>
+                <ul class="calendar_days-title">
+                    <li class="calendar_day-title">M</li>
+                    <li class="calendar_day-title">T</li>
+                    <li class="calendar_day-title">W</li>
+                    <li class="calendar_day-title">T</li>
+                    <li class="calendar_day-title">F</li>
+                    <li class="calendar_day-title">Sat</li>
+                    <li class="calendar_day-title">Sun</li>
+                </ul>
+            </div>
+
+            <div>
+                <ul class="calendar__days">
+                    <li class="calendar__day">
+                        <a href="?day=2018-03-01" aria-label="Monday, March 2018">1</a>
+                    </li>
+                    <li class="calendar__day">
+                        <a href="?day=2018-03-02" aria-label="Tuesday, March 2018">2</a>
+                    </li>
+                    <li class="calendar__day">
+                        <a href="?day=2018-03-03" aria-label="Wednesday, March 2018">3</a>
+                    </li>
+                    <li class="calendar__day">
+                        <a href="?day=2018-03-04" aria-label="Thursday, March 2018">4</a>
+                    </li>
+                    <li class="calendar__day">
+                        <a href="?day=2018-03-05" aria-label="Friday, March 2018">5</a>
+                    </li>
+                    <li class="calendar__day">
+                        <a href="?day=2018-03-06" aria-label="Saturday, March 2018">6</a>
+                    </li>
+                    <li class="calendar__day">
+                        <a href="?day=2018-03-07" aria-label="Sunday, March 2018">7</a>
+                    </li>
+    
+                    <li class="calendar__day">
+                        <a href="?day=2018-03-08" aria-label="Monday, March 2018">8</a>
+                    </li>
+                    <li class="calendar__day">
+                        <a href="?day=2018-03-09" aria-label="Tuesday, March 2018">9</a>
+                    </li>
+                    <li class="calendar__day">
+                        <a href="?day=2018-03-10" aria-label="Wednesday, March 2018">10</a>
+                    </li>
+                    <li class="calendar__day">
+                        <a href="?day=2018-03-11" aria-label="Thursday, March 2018">11</a>
+                    </li>
+                    <li class="calendar__day">
+                        <a href="?day=2018-03-12" aria-label="Friday, March 2018">12</a>
+                    </li>
+                    <li class="calendar__day">
+                        <a href="?day=2018-03-13" aria-label="Saturday, March 2018">13</a>
+                    </li>
+                    <li class="calendar__day">
+                        <a href="?day=2018-03-14" aria-label="Sunday, March 2018">14</a>
+                    </li>
+    
+                    <li class="calendar__day">
+                        <a href="?day=2018-03-15" aria-label="Monday, March 2018">15</a>
+                    </li>
+                    <li class="calendar__day">
+                        <a href="?day=2018-03-16" aria-label="Tuesday, March 2018">16</a>
+                    </li>
+                    <li class="calendar__day">
+                        <a href="?day=2018-03-17" aria-label="Wednesday, March 2018">17</a>
+                    </li>
+                    <li class="calendar__day">
+                        <a href="?day=2018-03-18" aria-label="Thursday, March 2018">18</a>
+                    </li>
+                    <li class="calendar__day">
+                        <a href="?day=2018-03-19" aria-label="Friday, March 2018">19</a>
+                    </li>
+                    <li class="calendar__day">
+                        <a href="?day=2018-03-20" aria-label="Saturday, March 2018">20</a>
+                    </li>
+                    <li class="calendar__day">
+                        <a href="?day=2018-03-21" aria-label="Sunday, March 2018">21</a>
+                    </li>
+    
+                    <li class="calendar__day">
+                        <a href="?day=2018-03-22" aria-label="Monday, March 2018">22</a>
+                    </li>
+                    <li class="calendar__day">
+                        <a href="?day=2018-03-23" aria-label="Tuesday, March 2018">23</a>
+                    </li>
+                    <li class="calendar__day">
+                        <a href="?day=2018-03-24" aria-label="Wednesday, March 2018">24</a>
+                    </li>
+                    <li class="calendar__day">
+                        <a href="?day=2018-03-25" aria-label="Thursday, March 2018">25</a>
+                    </li>
+                    <li class="calendar__day">
+                        <a href="?day=2018-03-26" aria-label="Friday, March 2018">26</a>
+                    </li>
+                    <li class="calendar__day">
+                        <a href="?day=2018-03-27" aria-label="Saturday, March 2018">27</a>
+                    </li>
+                    <li class="calendar__day">
+                        <a href="?day=2018-03-28" aria-label="Sunday, March 2018">28</a>
+                    </li>
+    
+                    <li class="calendar__day">
+                        <a href="?day=2018-03-29" aria-label="Monday, March 2018">29</a>
+                    </li>
+                    <li class="calendar__day">
+                        <a href="?day=2018-03-30" aria-label="Tuesday, March 2018">30</a>
+                    </li>
+                    <li class="calendar__day">
+                        <a href="?day=2018-03-31" aria-label="Wednesday, March 2018">31</a>
+                    </li>
+                    <li class="calendar__day calendar__day--not-in-month">
+                        <a href="?day=2018-04-01" aria-label="Thursday, March 2018">1</a>
+                    </li>
+                    <li class="calendar__day calendar__day--not-in-month">
+                        <a href="?day=2018-03-30" aria-label="Tuesday, March 2018">2</a>
+                    </li>
+                    <li class="calendar__day calendar__day--not-in-month">
+                        <a href="?day=2018-03-31" aria-label="Wednesday, March 2018">3</a>
+                    </li>
+                    <li class="calendar__day calendar__day--not-in-month">
+                        <a href="?day=2018-04-01" aria-label="Thursday, March 2018">4</a>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+
+        <div class="categories aside__item">
+            <div class="cat_h2">
+                    <h2>Your categories</h2>
+            </div>
+
+            <div class="button_box">
+                <button class="button_one"> 
+                    <p>FINANCE</p>
+                </button>
+                <button class="button_two">
+                    <p>MANAGEMENT</p>
+                </button>
+                <button class="button_three">
+                    <p>Design</p>
+                </button>
+            </div>
+        </div>
+
+    </aside>
+
 </body>
 
-<aside>
-    
-</aside>
+
 
 </html>
